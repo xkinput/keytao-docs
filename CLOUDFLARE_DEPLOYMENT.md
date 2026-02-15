@@ -4,9 +4,9 @@
 
 ## 前置条件
 
-- [x] Cloudflare账号（免费）
-- [x] 已在Vercel部署的VitePress文档站
-- [x] 自定义域名（可选，推荐）
+- [X] Cloudflare账号（免费）
+- [X] 已在Vercel部署的VitePress文档站
+- [X] 自定义域名（可选，推荐）
 
 ## 快速开始
 
@@ -21,21 +21,21 @@
 1. 左侧菜单选择 **Workers & Pages**
 2. 点击 **Create application**
 3. 选择 **Create Worker**
-4. 命名为 `keytao-docs-proxy`（或其他名称）
+4. 命名为 `keytao-docs`（或其他名称）
 5. 点击 **Deploy**
 
 #### 3. 编辑Worker代码
 
 1. 点击 **Edit code**
 2. 删除默认代码
-3. 复制 `cloudflare-worker.simple.js` 的全部内容
+3. 复制 `cloudflare-worker.js` 的全部内容
 4. 粘贴到编辑器
 5. 修改第7行，将 `your-docs.vercel.app` 替换为你的Vercel文档站域名
 6. 点击 **Save and Deploy**
 
 #### 4. 测试Worker
 
-点击预览链接（格式：`keytao-docs-proxy.workers.dev`），检查文档是否正常显示。
+点击预览链接（格式：`keytao-docs.workers.dev`），检查文档是否正常显示。
 
 #### 5. 绑定自定义域名（推荐）
 
@@ -197,6 +197,7 @@ export default {
 **原因**：Vercel域名配置错误或VitePress路由问题
 
 **解决**：
+
 1. 检查 `VERCEL_DOMAIN` 是否正确
 2. 确认Vercel部署正常运行
 3. 检查VitePress的 `cleanUrls` 配置
@@ -207,6 +208,7 @@ export default {
 **原因**：路径问题或缓存问题
 
 **解决**：
+
 1. 检查VitePress的 `base` 配置
 2. 清除浏览器缓存
 3. 检查控制台错误信息
@@ -217,6 +219,7 @@ export default {
 **原因**：VitePress搜索依赖本地索引
 
 **解决**：
+
 - 使用VitePress内置的本地搜索（已自动支持）
 - 或集成Algolia DocSearch（需额外配置）
 
@@ -225,6 +228,7 @@ export default {
 **原因**：CDN缓存
 
 **解决**：
+
 - HTML默认缓存5分钟
 - 可在Worker中调整 `max-age` 值
 - 或在Cloudflare Dashboard手动清除缓存：**Caching** → **Purge Cache**
@@ -244,6 +248,7 @@ export default {
 ### 查看分析数据
 
 **Metrics** 标签可查看：
+
 - 请求数量
 - 错误率
 - CPU时间
@@ -258,7 +263,7 @@ export default {
 3. **启用HTTPS Strict**：强制HTTPS访问
 4. **启用HSTS**：HTTP严格传输安全
 
-在`.vitepress/config.js`中添加安全头：
+在 `.vitepress/config.js`中添加安全头：
 
 ```js
 export default {
@@ -334,11 +339,11 @@ onMounted(() => {
 
 ## 成本预估
 
-| 方案 | 月费用 | 适用场景 |
-|------|--------|----------|
-| 免费计划 | $0 | <3M 请求/月 |
-| Paid Plan | $5 | 10M 请求/月 |
-| Paid + Polish | $10+ | 图片优化需求 |
+| 方案          | 月费用 | 适用场景     |
+| ------------- | ------ | ------------ |
+| 免费计划      | $0     | <3M 请求/月  |
+| Paid Plan     | $5     | 10M 请求/月  |
+| Paid + Polish | $10+   | 图片优化需求 |
 
 对于文档站点，**免费计划完全够用**！
 
@@ -346,19 +351,19 @@ onMounted(() => {
 
 ## 常见问题
 
-**Q: Worker会影响SEO吗？**  
+**Q: Worker会影响SEO吗？**
 A: 不会，搜索引擎爬虫看到的内容与直接访问Vercel一致。
 
-**Q: 支持VitePress的所有功能吗？**  
+**Q: 支持VitePress的所有功能吗？**
 A: 是的，Worker只是透明代理，不影响任何VitePress功能。
 
-**Q: 可以用于生产环境吗？**  
+**Q: 可以用于生产环境吗？**
 A: 可以，Cloudflare Workers非常稳定，许多大型网站都在使用。
 
-**Q: 如何回滚？**  
+**Q: 如何回滚？**
 A: 在Dashboard的Worker页面，点击 **Deployments**，选择历史版本 **Rollback**。
 
-**Q: 能否同时加速多个文档站点？**  
+**Q: 能否同时加速多个文档站点？**
 A: 可以，创建多个Worker，每个Worker对应一个文档站点。
 
 ---
@@ -375,6 +380,7 @@ A: 可以，创建多个Worker，每个Worker对应一个文档站点。
 ## 技术支持
 
 如有问题：
+
 1. 查看Worker日志排查
 2. 访问 [Cloudflare Community](https://community.cloudflare.com/)
 3. 提交issue到项目仓库

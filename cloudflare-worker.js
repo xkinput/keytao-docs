@@ -6,7 +6,7 @@ export default {
     const url = new URL(request.url);
 
     // 替换为你的Vercel部署域名
-    const VERCEL_DOMAIN = env.VERCEL_DOMAIN || 'your-docs.vercel.app';
+    const VERCEL_DOMAIN = env.VERCEL_DOMAIN || 'keytao-docs.vercel.app';
 
     // 构建目标URL
     const targetUrl = new URL(request.url);
