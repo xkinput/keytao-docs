@@ -1,0 +1,14 @@
+# Cloudflare Workers 环境变量配置示例 - KeyTao Docs
+# 本地开发时使用，部署到生产环境请在Cloudflare Dashboard配置
+
+# 你的Vercel文档站域名（必填）
+VERCEL_DOMAIN=your-docs.vercel.app
+
+# 启用调试日志（可选）
+DEBUG=false
+
+# 自定义缓存时间（秒，可选）
+# HTML页面缓存时间
+HTML_CACHE_MAX_AGE=300
+# 静态资源缓存时间
+STATIC_CACHE_MAX_AGE=31536000

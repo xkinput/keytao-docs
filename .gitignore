@@ -15,6 +15,11 @@ node_modules
 .env.local
 .env.*.local
 
+# Cloudflare Workers
+.wrangler/
+wrangler.toml.local
+.dev.vars
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
