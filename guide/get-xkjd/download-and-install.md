@@ -1,7 +1,6 @@
 ---
 description: 下载安装键道输入方案
 ---
-
 # 获取键道
 
 ## 安装更新程序（推荐）
@@ -20,9 +19,12 @@ description: 下载安装键道输入方案
 使用 Nix 安装前需先手动安装鼠须管（Squirrel）。
 :::
 
-## iOS
+## iOS 平台 元书输入法（推荐）
 
-iOS 平台暂不支持安装更新程序，请通过以下方式手动安装：
+[元书输入法](https://apps.apple.com/app/id6744464701) 是基于 RIME 引擎的 iOS 输入法，支持通过链接直接下载方案。
 
-- **iRime**：在 App Store 搜索 iRime 下载，参考 [iRime 部署「键道」图文教程](https://telegra.ph/iRime-%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88---%E4%BB%A5%E9%94%AE%E9%81%93%E4%B8%BA%E4%BE%8B-12-25) 或 [iOS 平台安装部署教程](https://hanhngiox.net/install/ios.html)
-- **落格**（付费）：在 App Store 搜索落格，在「对数云 - 主码表」下载「星空键道6.2 -- 官方版本」
+**安装步骤：**
+
+1. 前往 [GitHub Releases](https://github.com/xkinput/KeyTao/releases/latest)，复制 `keytao-ios-*.zip` 的下载链接
+2. 打开元书输入法 → **输入方案** → 右上角「下载方案」→ 填写方案名称（如 `keytao`）和上述下载链接 → 保存 → 点击下载
+3. 返回「输入方案」→ 右上角「方案目录切换」→ 自动打开 RimeUserData 目录 → 进入键道目录 → 找到方案文件目录 → 右上角「打开」→ 部署 → 等待完成
