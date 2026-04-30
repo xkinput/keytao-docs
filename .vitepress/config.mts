@@ -68,7 +68,8 @@ export default defineConfig({
             { text: '概述', link: '/guide/master-xkjd/' },
             { text: '特殊编码', link: '/guide/master-xkjd/extra-code' },
             { text: '特殊符号', link: '/guide/master-xkjd/extra-symbols' },
-            { text: '特殊功能', link: '/guide/master-xkjd/extra-functions' }
+            { text: '特殊功能', link: '/guide/master-xkjd/extra-functions' },
+            { text: 'Lua 功能', link: '/guide/master-xkjd/lua-features' }
           ]
         },
         {
