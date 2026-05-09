@@ -23,8 +23,22 @@ description: 下载安装键道输入方案
 
 [元书输入法](https://apps.apple.com/app/id6744464701) 是基于 RIME 引擎的 iOS 输入法，支持通过链接直接下载方案。
 
+- 默认 Gitee：`https://keytao.vercel.app/api/install/ios-latest`
+- 指定 GitHub：`https://keytao.vercel.app/api/install/ios-latest?source=github`
+
+**国内建议优先使用** `keytao.rea.ink`：
+
+- 默认 Gitee：`https://keytao.rea.ink/api/install/ios-latest`
+- 指定 GitHub：`https://keytao.rea.ink/api/install/ios-latest?source=github`
+
+可用参数示例：
+
+- `source=gitee`：使用 Gitee latest release
+- `source=github`：使用 GitHub latest release
+- 不传 `source`：默认使用 Gitee
+
 **安装步骤：**
 
-1. 前往 [GitHub Releases](https://github.com/xkinput/KeyTao/releases/latest)，复制 `keytao-ios-*.zip` 的下载链接
+1. 复制上面的最新 iOS 包跳转链接之一；若在国内网络环境，优先使用 `https://keytao.vercel.app/api/install/ios-latest`；若你更想手动找包，也可以前往 [GitHub Releases](https://github.com/xkinput/KeyTao/releases/latest) 复制 `keytao-ios-*.zip` 的下载链接
 2. 打开元书输入法 → **输入方案** → 右上角「下载方案」→ 填写方案名称（如 `keytao`）和上述下载链接 → 保存 → 点击下载
 3. 返回「输入方案」→ 右上角「方案目录切换」→ 自动打开 RimeUserData 目录 → 进入键道目录 → 找到方案文件目录 → 右上角「打开」→ 部署 → 等待完成
