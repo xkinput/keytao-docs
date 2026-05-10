@@ -4,7 +4,7 @@ description: 更新键道方案与码表
 
 # 更新键道
 
-运行 **[KeyTao 键道安装更新程序](https://github.com/xkinput/keytao-installer/releases/latest)** 即可一键完成键道方案的更新，支持 Windows / macOS / Linux / Android。
+运行 **[KeyTao 键道安装更新程序](https://github.com/xkinput/keytao-installer/releases)** 即可一键完成键道方案的更新，支持 Windows / macOS / Linux / Android。
 
 ## iOS
 

@@ -5,7 +5,7 @@ description: 下载安装键道输入方案
 
 ## 安装更新程序（推荐）
 
-前往下载 **[KeyTao 键道安装更新程序](https://github.com/xkinput/keytao-installer/releases/latest)**，可自动完成键道方案的安装与更新，支持 Windows / macOS / Linux / Android。
+前往下载 **[KeyTao 键道安装更新程序](https://github.com/xkinput/keytao-installer/releases)**，可自动完成键道方案的安装与更新，支持 Windows / macOS / Linux / Android。
 
 如果 Linux 用户遇到 fcitx/ibus 相关问题，可查看 [Linux 安装 fcitx/rime 教程](https://github.com/xkinput/KeyTao/wiki/Linux%E5%AE%89%E8%A3%85rime%E9%94%AE%E9%81%936%E6%95%99%E7%A8%8B)。
 
