@@ -13,6 +13,9 @@ hero:
       text: 快速开始
       link: /guide/get-xkjd/
     - theme: alt
+      text: 在线试用
+      link: https://keytao.vercel.app/practice
+    - theme: alt
       text: 了解键道
       link: /guide/
     - theme: alt
