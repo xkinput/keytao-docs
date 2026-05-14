@@ -16,7 +16,9 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' },
-      { text: '获取键道', link: '/guide/get-xkjd/' }
+      { text: '获取键道', link: '/guide/get-xkjd/' },
+      { text: '在线练习', link: 'https://keytao.vercel.app/practice' },
+      { text: '键道加词', link: 'https://keytao.vercel.app/' }
     ],
 
     sidebar: {
