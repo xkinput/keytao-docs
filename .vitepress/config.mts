@@ -71,7 +71,8 @@ export default defineConfig({
             { text: '特殊编码', link: '/guide/master-xkjd/extra-code' },
             { text: '特殊符号', link: '/guide/master-xkjd/extra-symbols' },
             { text: '特殊功能', link: '/guide/master-xkjd/extra-functions' },
-            { text: 'Lua 功能', link: '/guide/master-xkjd/lua-features' }
+            { text: 'Lua 功能', link: '/guide/master-xkjd/lua-features' },
+            { text: '喵喵机器人', link: '/guide/master-xkjd/miaomiao-bot' }
           ]
         },
         {
